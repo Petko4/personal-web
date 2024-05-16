@@ -17,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="flex flex-col p-5 items-center">
+      <body className="flex flex-col md:p-5 items-center">
         <Navbar />
         {children}
       </body>
