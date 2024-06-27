@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Navbar } from "./components/Navbar/Navbar";
 // import { Poppins } from "next/font/google";
 import "./globals.css";
+import { Footer } from "./components/Footer/Footer";
 
 // const poppins = Poppins({ subsets: ["latin"], weight: "500" });
 
@@ -20,6 +21,7 @@ export default function RootLayout({
       <body className="flex flex-col md:p-5 items-center">
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
