@@ -14,11 +14,11 @@ export const TitleContainer = ({
   imgAlt,
 }: TitleContainerProps) => {
   return (
-    <div className={`flex items-center mb-10 ${className}`}>
+    <div className={`flex items-center mb-3 ${className}`}>
       {imgUrl && (
         <Image src={imgUrl} width={50} height={50} alt={imgAlt ? imgAlt : ""} />
       )}
-      <h2 className="font-light">{children}</h2>
+      <h2 className="font-light ms-5">{children}</h2>
     </div>
   );
 };
